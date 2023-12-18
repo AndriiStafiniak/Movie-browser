@@ -1,18 +1,15 @@
 
 import axios from "axios";
+import { API_KEY } from "./API_data/KEY";
+import { URL_API } from "./API_data/URL";
 
 export const getMoviesDetails = async (movieId) => {
-   try {
-      const response = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}?language=en-US`, {
-         headers: {
-            accept: 'application/json',
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyZTNkYzA0NDk2MjU0OTgwZDAxZGE2ZjEyZWNkOGUxZCIsInN1YiI6IjY1NGJiZGEyNDFhNTYxMzM2YzVlZDg2NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Jjbm7YAkE1x0vuKowvjXJFiE28sDgW1TB_diyZmPKVQ',
-         }
-      });
-      return response.data;
-   } catch (error) {
-      console.error("Error fetching movie details:", error);
-      throw error;
-   }
+
+   const response = await axios.get(`${URL_API}movie/${movieId}?${API_KEY}language=en-US`, {
+      headers: {
+         accept: 'application/json',
+      }
+   });
+   return await response.data;
 };
 

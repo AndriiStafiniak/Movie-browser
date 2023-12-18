@@ -1,11 +1,12 @@
 import axios from "axios";
+import { API_KEY } from "./API_data/KEY";
+import { URL_API } from "./API_data/URL";
 
 export const getCreditsForPerson = async (personId) => {
-   const response = await axios.get(`https://api.themoviedb.org/3/person/${personId}/movie_credits`, {
+   const response = await axios.get(`${URL_API}person/${personId}/movie_credits?${API_KEY}`, {
       headers: {
-         accept: 'application/json',
-         Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmZWIwODA0MTkzNDhmOWE0ODI2YjM4MGYyMDIyMjdmOSIsInN1YiI6IjY1NTUyOGQyNjdiNjEzNDVjY2FlY2E2YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jLCs-Vj_4OdI-m_zrK2B2Or7dmeDTwZ53dwHDnM0HJ0'
+         accept: 'application/json'
       }
    });
-   return response.data
+   return await response.data
 };

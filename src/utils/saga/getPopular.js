@@ -1,13 +1,13 @@
 import axios from "axios";
+import { URL_API } from "./API_data/URL";
+import { API_KEY } from "./API_data/KEY";
 
 export const getPopular = async (category, page) => {
   const response = await axios(
-    `https://api.themoviedb.org/3/${category}/popular?page=${page}`,
+    `${URL_API}${category}/popular?page=${page}?${API_KEY}`,
     {
       headers: {
         accept: "application/json",
-        Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyZTNkYzA0NDk2MjU0OTgwZDAxZGE2ZjEyZWNkOGUxZCIsInN1YiI6IjY1NGJiZGEyNDFhNTYxMzM2YzVlZDg2NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Jjbm7YAkE1x0vuKowvjXJFiE28sDgW1TB_diyZmPKVQ",
       },
     }
   );
