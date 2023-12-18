@@ -4,7 +4,7 @@ import { ReactComponent as StarIcon } from "../../../assets/icons/star.svg";
 
 export const Wrapper = styled.div`
 	display: grid;
-	background-color: ${({theme}) => theme.colors.tile.background};
+	background-color: ${({ theme }) => theme.colors.tile.background};
 	grid-template-rows: auto 1fr;
 	padding: 16px;
 	box-shadow: ${({ theme }) => theme.properties.tile.boxShadow};

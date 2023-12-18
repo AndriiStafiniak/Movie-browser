@@ -6,7 +6,9 @@ export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: inherit;
   transition: 1s;
-  display: flex;
+  display: grid;
+  max-height: 450px;
+
 
   &:hover {
     box-shadow: -1px 2px 7px 8px rgba(148, 255, 249, 1);

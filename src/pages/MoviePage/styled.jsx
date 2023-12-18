@@ -47,10 +47,7 @@ export const Wrapper = styled.div`
  max-width: 1400px;
  padding: 0 16px 32px 16px;
  margin: 0 auto;
- display: flex;
- flex-direction: column;
- justify-content: center;
- flex-wrap: wrap;
+ 
 
  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.m}) {
   gap: 16px;
