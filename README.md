@@ -26,7 +26,7 @@ The project leverages the following technologies:
 
 ## Demo
 
-To see the project in action, check out the [Demo](https://jakub-bartoszek-developer.github.io/Movie-browser/). Please note that the project is still ongoing and you can follow the progress at the link provided.
+To see the project in action, check out the [Demo](https://andriistafiniak.github.io/Movie-browser/). Please note that the project is still ongoing and you can follow the progress at the link provided.
 
 ![Project Screenshot](/readmeMovies.png)
 
