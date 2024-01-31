@@ -169,4 +169,9 @@ export const Rate = styled.span`
 
 export const Votes = styled.span`
 	color: ${({ theme }) => theme.colors.tile.mutedText};
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.s}) {
+		font-size: 13px;
+		line-height: 130%;
+	}
 `;

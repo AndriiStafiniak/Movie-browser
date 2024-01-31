@@ -20,10 +20,6 @@ export const Pagination = styled.div`
 
 export const Text = styled.span`
   color: ${({ theme }) => theme.colors.pagination.text};
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.s}) {
-    font-size: 12px;
-  }
 `;
 
 export const Button = styled.button`
@@ -65,5 +61,14 @@ export const StyledRightIcon = styled(RightIcon)`
   @media (max-width: ${({ theme }) => theme.breakpoints.s}) {
     width: 5px;
     height: 8px;
+  }
+`;
+export const WrapperContent = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  @media (max-width: ${({ theme }) => theme.breakpoints.s}) {
+    font-size: 10px;
+    line-height:1.2;
   }
 `;

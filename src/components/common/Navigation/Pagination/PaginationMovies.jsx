@@ -7,6 +7,7 @@ import {
   StyledLeftIcon,
   StyledRightIcon,
   Text,
+  WrapperContent,
 } from "./styled";
 
 export const PaginationMovies = ({
@@ -99,15 +100,15 @@ export const PaginationMovies = ({
           </>
         )}
         {searchQuery ? (
-          <span>
+          <WrapperContent>
             <Text>Page</Text> <strong>{searchPage}</strong> <Text>of</Text>{" "}
             <strong>{searchTotalPages}</strong>
-          </span>
+          </WrapperContent>
         ) : (
-          <span>
+          <WrapperContent>
             <Text>Page</Text> <strong>{page}</strong> <Text>of</Text>{" "}
             <strong>{totalPages}</strong>
-          </span>
+          </WrapperContent>
         )}
         {page === totalPages && searchPage === searchTotalPages ? (
           <>
