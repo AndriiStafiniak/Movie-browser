@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Movie-browser/static/js/main.c3d77e4a.js",
+    "main.js": "/Movie-browser/static/js/main.c6dc8017.js",
     "static/js/787.9ba826ac.chunk.js": "/Movie-browser/static/js/787.9ba826ac.chunk.js",
     "static/media/paperplane.svg": "/Movie-browser/static/media/paperplane.03778e104c236c2e6f3a37f0afbb2311.svg",
     "static/media/star.svg": "/Movie-browser/static/media/star.291f146da8ec732e66d3333dc945ea1b.svg",
@@ -12,10 +12,10 @@
     "static/media/left.svg": "/Movie-browser/static/media/left.80cb030965c71dcfbf9a92d42e33c44c.svg",
     "static/media/search.svg": "/Movie-browser/static/media/search.65152feae0c2482d7500abd94eca22ef.svg",
     "static/media/loader.svg": "/Movie-browser/static/media/loader.17b2cd246403596367f2437ec95272ba.svg",
-    "main.c3d77e4a.js.map": "/Movie-browser/static/js/main.c3d77e4a.js.map",
+    "main.c6dc8017.js.map": "/Movie-browser/static/js/main.c6dc8017.js.map",
     "787.9ba826ac.chunk.js.map": "/Movie-browser/static/js/787.9ba826ac.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.c3d77e4a.js"
+    "static/js/main.c6dc8017.js"
   ]
 }
