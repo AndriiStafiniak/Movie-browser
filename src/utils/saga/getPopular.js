@@ -1,15 +1,11 @@
 import axios from "axios";
-import { URL_API } from "./API_data/URL";
-import { API_KEY } from "./API_data/KEY";
-
+import { API_URL } from "./APIdata/API_URL";
+import { API_key } from "./APIdata/API_key";
+import { languageData } from "./APIdata/languageData";
 export const getPopular = async (category, page) => {
   const response = await axios(
-    `${URL_API}${category}/popular?page=${page}?${API_KEY}`,
-    {
-      headers: {
-        accept: "application/json",
-      },
-    }
+    `${API_URL}${category}/popular?page=${page}?${languageData}`,
+    API_key
   );
 
   return await response.data;

@@ -1,14 +1,13 @@
 import axios from "axios";
-import { API_KEY } from "./API_data/KEY";
-import { URL_API } from "./API_data/URL";
+import { API_URL } from "./APIdata/API_URL";
+import { API_key } from "./APIdata/API_key";
+import { languageData } from "./APIdata/languageData";
 
 export const getGenres = async () => {
 
-  const response = await axios.get(`${URL_API}genre/movie/list?${API_KEY}language=en`, {
-    headers: {
-      accept: 'application/json',
-    }
-  });
+  const response = await axios.get(`${API_URL}genre/movie/list?${languageData}`,
+    API_key
+  );
 
   return await response.data.genres;
 };

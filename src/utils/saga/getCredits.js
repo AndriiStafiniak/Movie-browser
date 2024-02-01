@@ -1,20 +1,13 @@
-// import axios from "axios";
+import axios from "axios";
 
-import { useGetData } from "./useGetData"
+import { API_URL } from "./APIdata/API_URL";
+import { API_key } from "./APIdata/API_key";
+import { languageData } from "./APIdata/languageData";
 
-// import { URL_API } from "./ApiData/apiURL";
-// import { API_KEY } from "./ApiData/apiKey";
-
-// export const getCredits = async (movieId) => {
-//   const response = await axios.get(
-//     `${URL_API}movie/${movieId}/credits?${API_KEY}&language=en-US`,
-//     {
-//       headers: {
-//         accept: "application/json",
-//       },
-//     }
-//   );
-//   return await response.data;
-// }; 
-const apiData = "movie/${movieId}/credits"
-useGetData(apiData)
+export const getCredits = async (movieId) => {
+   const response = await axios.get(
+      `${API_URL}movie/${movieId}/credits?${languageData}`,
+      API_key
+   );
+   return await response.data;
+};

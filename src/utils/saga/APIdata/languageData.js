@@ -1,0 +1,1 @@
+export const languageData = "language=en-US"
